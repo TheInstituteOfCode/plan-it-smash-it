@@ -1,0 +1,190 @@
+*{
+  padding:0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-position: center;
+/*   background-attachment: fixed; */
+  background-size: cover;
+}
+[class*="grid-"], [class*="grid_"], [class~="grid"]{
+  margin: 0
+}
+
+img{
+  max-width: 100%;
+}
+/* generals */
+
+section,header,footer{
+  padding:10vw 5%;
+  position: relative;
+}
+
+.center{
+  text-align: center;
+}
+
+.padding-0{
+  padding: 0;
+}
+
+.padded-2{
+  padding: 2%;
+}
+
+.padded-5{
+  padding: 5%
+}
+
+.dark-overlay{
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+}
+
+.main-button{
+  color:#fff;
+  background-color: #e67e22;
+  padding: 2%;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 3%;
+}
+.alt-button {
+    color: #fff;
+    background-color: #117e8d;
+    padding: 2%;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 3%;
+}
+
+.arrow{
+  display: block;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.fa-check{
+  color: #00A9BF;
+  font-size: 3rem;
+}
+
+.flex-center{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.two-colum{
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2
+}
+/* type */
+
+body{
+  overflow-x: hidden;
+    font-family: macho,Lato,sans-serif;
+}
+
+p,h1,h2,h3,h4{
+  padding: 0.7% 0;
+}
+
+h1,h2,h3,h4{
+  text-align: center;
+}
+
+h1{
+  font-size: 2.4rem;
+}
+h2{
+  font-size: 3rem;
+}
+h3{
+  font-size: 2rem;
+}
+h4{
+  font-size: 2
+}
+p{
+  font-size: 1rem;
+}
+a{
+  color: inherit;
+}
+
+
+
+svg{
+  position: absolute;
+  width:100%;
+  right:0;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+svg.top{
+  top: 0;
+}
+svg.bottom{
+  bottom: 0;
+}
+
+/* .colors */
+
+.white-svg{
+  fill: white;
+}
+
+.color-svg{
+  fill:#00A9BF;
+}
+
+.color-section{
+  background-color: #00A9BF;
+  color:white;
+}
+
+
+
+
+header{
+  min-height: 100vh;
+  background-image:url('/uploads/terry-pool.jpg');
+  overflow: hidden;
+  color: white;
+}
+
+header .dark-overlay{
+  padding: 10vw 5%;
+
+}
+
+#sec-3{
+  min-height: 100vh;
+  background-image:url('https://picsum.photos/400/400/?random');
+}
+#sec-5 img{
+  border-radius: 50%;
+  width: 100%;
+}
+
+#sec-7{
+  background-image: url('https://picsum.photos/800/800/?random');
+  min-height:80vh;
+}
+
+#sec-8{
+
+}
+#sec-8 div{
+  position: relative;
+overflow: hidden;
+}
