@@ -1,0 +1,199 @@
+---
+enquire_link: ioc
+details:
+  - text: Five mornings of guided business strategy and planning, followed by masterclasses in traditional and digital marketing (Facebook, Instagram, Pinterest, and Snapchat etc.), content strategy, optimising your LinkedIn profile, your digital health (your website and SEO) and leadership in business.
+  - text: Five afternoons to apply what you’ve learnt, take advantage of 1:1 sessions with our business coaches, take care of business back home (we completely understand!), or sight-see if you wish.
+  - text: Six evenings of fun and laughter with like-minded business women, or time-out for yourself if you prefer.
+  - text: Up to six nights’ share or private accommodation in a stunning villa.
+  - text: Airport transfers to and from the retreat venue.
+  - text: Mortgage & Finance Association of Australia (MFAA) certified collect 23.5 CPD points!
+  - text: Incredible food by our personal chef (dietary needs can be catered for), non-alcoholic beverages, optional daily yoga, meditation and massages (yes, every day!), sun lounges and a divine pool overlooking tropical surroundings.
+  - text: Professional hair and make-up, followed by a personalised business profile photo session with Emilio, our highly experienced in-house photographer.
+  - text: <span>Exclusions:<span> flights to and from Bali, accommodation and meals outside of those days listed in the retreat schedule, alcoholic beverages, local excursion costs.
+mentors:
+  - text: <span>Personal Travel Advisor - Flights:<span>   Plan it, Smash It Business Retreat has partnered with Sekha Walsh, personal travel advisor to Barefoot Investor network and all-time amazing flight finder.<br/>Booking with Sekha won’t cost you extra and it will be done in 20 seconds flat https://www.itravelwithsekha.com, that’s how we roll, we get things done.
+  - image_path: https://picsum.photos/200/300/?random
+    name: Rebecca Tait
+    role: Business & Digital Strategist
+    links:
+    - icon: <i class="fa fa-globe" aria-hidden="true"></i>
+      url: http://www.rebeccatait.com.au/
+    - icon: <i class="fa fa-linkedin" aria-hidden="true"></i>
+      url: https://www.linkedin.com/in/rebeccatait/
+    para:
+      - text: Rebecca runs RLT Consulting, a Business and Digital Strategy service that transforms businesses to compete in the digital age. Inspired by her own challenges and experiences working in IT, Property and Financial Services, she is devoted to helping business owners steadily grow their businesses.
+      - text: With over 15 years of experience, she’s known for her unique blend of practical advice and intuitive insight. Working with some of Australia's most iconic brands within financial services, Rebecca has successfully implemented a wide range of business and marketing strategies.
+      - text: Thanks to her commitment to growth and a deep understanding of consumer behaviour on social platforms she has been able to assist many incredible past and present clients rapidly grow their businesses and sustain growth during a various business challenges. She is running the business of her dreams and believes you deserve the same.
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Plan it, Smash it</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.1/gridlex.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+  <header>
+    <h1>Plan It Smash It Biz Retreat</h1>
+    <div class="">
+      <h3>6 nights, 5 days</h3>
+      <h3>18-24 February 2018</h3>
+      <h3>Canggu, Bali</h3>
+    </div>
+    <p>Let's connect the dots in your life to THINK, PLAN and SUCCEED professionally and personally</p>
+    <a href="{{page.enquire_link}}" class="big-button">ENQUIRE | BOOK</a>
+    <svg viewBox="0 0 100 10">
+      <polygon points="0,0 0,10 100,10 100,0 50,10"/>
+    </svg>
+    <a href="#sec2"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
+  </header>
+  <section id="sec-2">
+    <h2>IT'S TIME TO <span> RETREAT</span></h2>
+    <div class="editable">
+      <p>It’s time to step out of your stressful life …...……and gain CLARITY, PLANNING, RELAXATION, LEARNING, GROWTH & FUN.</p>
+    </div>
+    <a href="#sec4"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
+  </section>
+  <section class="sec-3">
+    <svg viewBox="0 0 100 10">
+      <polygon points="0,0 0,10 100,0"/>
+    </svg>
+    <svg viewBox="0 0 100 10">
+      <polygon points="0,10 100,10 100,0"/>
+    </svg>
+  </section>
+  <section id="sec-4">
+    <h2>WHATS
+      <span>
+        INCLUDED
+      </span>
+    </h2>
+    <div class="two-colum">
+      {% for things in page.details %}
+      <div class="flex-center">
+        <span>
+          <i class="fa fa-check" aria-hidden="true"></i>
+        </span>
+        <p>{{things.text}}</p>
+      </div>
+      {% endfor %}
+    </ul>
+
+    <a href="#" class="button-alt">FULL SCHEDULE</a>
+    <a href="{{page.enquire_link}}" class="big-button">ENQUIRE | BOOK</a>
+  </section>
+  <section id="sec-5">
+    <svg viewBox="0 0 100 10">
+      <polygon points="0,0 0,10 100,0"/>
+    </svg>
+    <h2>
+      YOUR BUSINESS
+      <span>COACHES</span>
+    </h2>
+    {% for mentor in page.mentors %}
+    <div class="grid-spaceBetween">
+      <div class="col-2">
+        <img src="{{mentor.image_path}}" alt="{{mentor.name}}">
+        {% for link in mentor.links %}
+        <a class="social-link" href="{{link.url}}">
+
+        </a>
+        {% endfor %}
+      </div>
+      <div class="col-8">
+        <h3>
+          {{mentor.name}}
+        </h3>
+        <h4>{{mentor.role}}</h4>
+        {% for para in mentor.para %}
+        <p>{{para.text}}</p>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+    <svg viewBox="0 0 100 10">
+      <polygon points="0,10 100,10 100,0"/>
+    </svg>
+  </section>
+  <section id="sec-6">
+    <h2>
+      INVEST IN YOU &
+      <span>YOUR BUSINESS</span>
+    </h2>
+    <h3>
+      <span>Book now </span>to secure one of only TEN places at our incredible business retreat.
+    </h3>
+    <p>You will have access to four business coaches, hours of hands-on learning, connection with like-minded businesswomen, and some fantastic downtime before you Smash It.</p>
+    <div class="grid">
+      <div class="col-6">
+        <h3>EARLY BIRD PRICE</h3>
+        <p>Book and pay on or before 31 January 2018 AEST</p>
+        <p>$5,000 AUD share</p>
+        <p>$7,500 AUD private room</p>
+      </div>
+      <div class="col-6">
+        <p>Book and pay on or before 31 January 2018 AEST</p>
+        <p>$5,000 AUD share</p>
+        <p>$7,500 AUD private room</p>
+      </div>
+    </div>
+    <a href="{{page.enquire_link}}" class="big-button">ENQUIRE | BOOK</a>
+  </section>
+  <section id="sec-7">
+    <svg viewBox="0 0 100 10">
+      <polygon points="0,0 100,10 100,0"/>
+    </svg>
+    <a href="#sec-8"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
+
+  </section>
+  <section id="sec-8">
+    {% for info in page.course-info %}
+    <div class="grid">
+      {% if loop.index == even %}
+      <div class="col-6 over-crop" style="background-image:url('{{info.pic}}')">
+        <svg viewBox="0 0 100 100">
+          <polygon points="100,10 100,0 50,10"/>
+        </svg>
+      </div>
+      <div class="col-6">
+        <h3>
+          {{info.small-title}}
+          <span>{{info.large-title}}</span>
+        </h3>
+        {% for para in info.para %}
+        <p>{{para.text}}</p>
+        {% endfor %}
+      </div>
+
+
+      {% else %}
+      <div class="col-6">
+        <h3>
+          {{info.small-title}}
+          <span>{{info.large-title}}</span>
+        </h3>
+        {% for para in info.para %}
+        <p>{{para.text}}</p>
+        {% endfor %}
+      </div>
+      <div class="col-6 over-crop" style="background-image:url('{{info.pic}}')">
+        <svg viewBox="0 0 100 100">
+          <polygon points="100,10 100,0 50,10"/>
+        </svg>
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </section>
+  <section id="sec-9">
+    <svg viewBox="0 0 100 10">
+      <polygon points="0,0 0,10 100,10 100,0 50,10"/>
+    </svg>
+    <a href="#" class="big-button">ENQUIRE | BOOK</a>
+    <svg viewBox="0 0 100 10">
+      <polygon points="0,0 0,10 50,0 100,10 100,0"/>
+    </svg>
+  </section>
+</body>
+</html>
