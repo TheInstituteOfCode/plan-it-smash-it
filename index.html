@@ -72,7 +72,7 @@ mentors:
     links:
       - icon: <i class="fa fa-globe" aria-hidden="true"></i>
         url: www.instituteofcode.com
-      - icon: <i class="fa fa-linkedIn" aria-hidden="true"></i>
+      - icon: <i class="fa fa-linkedin" aria-hidden="true"></i>
         url: 'https://www.linkedin.com/in/connectwithtina/'
     para:
       - text:
@@ -130,7 +130,7 @@ mentors:
         <p>{{things.text}}</p>
       </div>
       {% endfor %}
-    
+
 
     <a href="#" class="button-alt">FULL SCHEDULE</a>
     <a href="{{page.enquire_link}}" class="big-button">ENQUIRE | BOOK</a>
@@ -149,7 +149,7 @@ mentors:
         <img src="{{mentor.image_path}}" alt="{{mentor.name}}" />
         {% for link in mentor.links %}
         <a class="social-link" href="{{link.url}}">
-
+          {{link.icon}}
         </a>
         {% endfor %}
       </div>
