@@ -17,7 +17,7 @@ img{
 /* generals */
 
 section,header,footer{
-  padding:10vw 5%;
+  padding:0 5% 10vw;
   position: relative;
 }
 
@@ -35,6 +35,10 @@ section,header,footer{
 
 .padded-5{
   padding: 5%
+}
+
+.margin-bottom-5{
+  margin-bottom: 5%;
 }
 
 .dark-overlay{
@@ -103,19 +107,27 @@ h1,h2,h3,h4{
 }
 
 h1{
-  font-size: 2.4rem;
+  font-size: 3.4rem;
 }
 h2{
+  font-size: 2.5rem;
+  margin: 10% 30%;
+}
+h2 span{
   font-size: 3rem;
+  display: block;
 }
 h3{
   font-size: 2rem;
 }
 h4{
-  font-size: 2
+  font-size: 2rem
 }
 p{
-  font-size: 1rem;
+  font-size: 1.5rem;
+}
+p:nth-last-child{
+  margin-bottom: 5%s
 }
 a{
   color: inherit;
@@ -169,11 +181,22 @@ header .dark-overlay{
 
 #sec-3{
   min-height: 100vh;
-  background-image:url('https://picsum.photos/400/400/?random');
+  background-image:url('/uploads/class.jpg');
 }
+#sec-5{
+  padding-top: 10vw; 
+}
+
 #sec-5 img{
   border-radius: 50%;
   width: 100%;
+}
+
+.social-link{
+  font-size: 3rem;
+}
+
+#sec-6{
 }
 
 #sec-7{
