@@ -37,6 +37,10 @@ section,header,footer{
   padding: 5%
 }
 
+.padded-bottom-0{
+  padding-bottom: 0;
+}
+
 .margin-bottom-5{
   margin-bottom: 5%;
 }
@@ -66,7 +70,8 @@ section,header,footer{
 .arrow{
   display: block;
   font-size: 4rem;
-  text-align: center;
+  width: 3rem;
+  margin: 5% auto;
 }
 
 .fa-check{
@@ -91,6 +96,10 @@ section,header,footer{
      -moz-columns: 2;
           columns: 2
 }
+
+.bg-info {
+  min-height: 30vh;
+}
 /* type */
 
 body{
@@ -111,7 +120,7 @@ h1{
 }
 h2{
   font-size: 2.5rem;
-  margin: 10% 30%;
+  margin: 5% 30%;
 }
 h2 span{
   font-size: 3rem;
@@ -131,6 +140,7 @@ p:nth-last-child{
 }
 a{
   color: inherit;
+  text-decoration: none;
 }
 
 
@@ -158,10 +168,18 @@ svg.bottom{
 .color-svg{
   fill:#00A9BF;
 }
+.dark-svg{
+  fill: #41414D;
+}
 
 .color-section{
   background-color: #00A9BF;
   color:white;
+}
+
+.dark-sec{
+  background-color: #41414D;
+  color:#fff;
 }
 
 
@@ -184,7 +202,7 @@ header .dark-overlay{
   background-image:url('/uploads/class.jpg');
 }
 #sec-5{
-  padding-top: 10vw; 
+  padding-top: 10vw;
 }
 
 #sec-5 img{
@@ -194,20 +212,38 @@ header .dark-overlay{
 
 .social-link{
   font-size: 3rem;
+  display: inline-block;
+}
+
+.social-link .fa{
+  display: block;
+  margin-top: 20%;
 }
 
 #sec-6{
+  padding-bottom: 0;
 }
 
 #sec-7{
-  background-image: url('https://picsum.photos/800/800/?random');
+  background-image: url('/uploads/class.jpg');
   min-height:80vh;
 }
 
-#sec-8{
-
+#sec-9{
+padding-bottom: 15vw;
 }
-#sec-8 div{
+
+footer{
   position: relative;
-overflow: hidden;
+  padding: 5%;
+}
+
+
+@media all and (max-width:520px){
+  #sec-8 .grid:nth-child(2n){
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  }
 }
