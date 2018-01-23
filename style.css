@@ -104,7 +104,8 @@ section,header,footer{
 
 body{
   overflow-x: hidden;
-    font-family: macho,Lato,sans-serif;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 p,h1,h2,h3,h4{
@@ -194,7 +195,20 @@ header{
 
 header .dark-overlay{
   padding: 10vw 5%;
+}
+#sec-2{
+  padding-left: 0;
+  padding-right: 0;
+}
 
+#sec-2 p{
+  padding:2% 15%;
+}
+
+#sec-2-5{
+  position: relative;
+  background-image:url('/uploads/pool-chairs.jpg');
+  min-height:80vh;
 }
 
 #sec-3{
@@ -236,6 +250,52 @@ padding-bottom: 15vw;
 footer{
   position: relative;
   padding: 5%;
+}
+
+/* form */
+
+.form-bg{
+  background-attachment: fixed;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: black;
+}
+
+.form-bg input,
+.form-bg textarea,
+.form-bg select{
+  width: 100%;
+  margin-bottom: 5vh;
+  padding: 2%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+select{
+  margin-top: 5%;
+}
+
+textarea{
+  min-height: 10vh;
+  width:auto;
+
+}
+
+input[type="submit"] {
+    height: 50px;
+    width: 71px;
+    letter-spacing: 2px;
+    margin: auto;
+    display: block;
 }
 
 
