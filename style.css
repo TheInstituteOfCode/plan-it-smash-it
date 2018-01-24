@@ -252,7 +252,9 @@ header .dark-overlay{
   background-image: url('/uploads/class.jpg');
   min-height:80vh;
 }
-
+#sec-8 h3{
+  margin-bottom: 20px;
+}
 #sec-9{
 padding-bottom: 15vw;
 }
@@ -310,12 +312,19 @@ input[type="submit"] {
 
 
 @media all and (max-width:768px){
+  header span{
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
   .invert{
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   }
+
+
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
