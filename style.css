@@ -248,6 +248,14 @@ header .dark-overlay{
   padding-bottom: 0;
 }
 
+#sec-6 p{
+padding: 2.5%;
+}
+
+#sec-6 div{
+  text-align: center;
+}
+
 #sec-7{
   background-image: url('/uploads/class.jpg');
   min-height:80vh;
