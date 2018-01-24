@@ -42,6 +42,10 @@ section,header,footer{
   padding: 5%
 }
 
+.padded-10{
+  padding:10%;
+}
+
 .padded-bottom-0{
   padding-bottom: 0;
 }
@@ -140,6 +144,7 @@ h4{
 }
 p{
   font-size: 1.2rem;
+  line-height: 1.5
 }
 p:nth-last-child{
   margin-bottom: 5%s
