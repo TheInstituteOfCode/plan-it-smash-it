@@ -146,8 +146,7 @@ mentors:
           change the world.
 course-info:
   - image: /uploads/bali-1.jpg
-    small-title: CANGGU
-    large-title: BALI
+    title: CANGGU BALI
     para:
       - text: >-
           This immersive retreat is hosted at our private pool villa, just a few
@@ -164,8 +163,7 @@ course-info:
           send you to all the places that we love or give guidance on where to
           go or what to see!
   - image: /uploads/pool-shot.jpg
-    small-title: THE
-    large-title: VILLA
+    title: THE VILLA
     para:
       - text: >-
           This stunning private villa will be your home for 6 delightful nights
@@ -184,8 +182,7 @@ course-info:
           a bar (why not wine!) and breakout areas for deep thinking and
           planning.
   - image: /uploads/food.jpg
-    small-title: THE
-    large-title: FOOD
+    title: THE FOOD
     para:
       - text: >-
           When you’re nourished with great food you can focus and learn at a
@@ -198,8 +195,7 @@ course-info:
           You’ll have the opportunity to inform and plan with our Retreat
           Manager in advance before arrival.
   - image: /uploads/rooms.jpg
-    small-title: THE
-    large-title: ROOMS
+    title: THE ROOMS
     para:
       - text: Our villa rooms are a destination themselves!
       - text: >-
@@ -221,8 +217,7 @@ course-info:
           identical nearby villa 5 minutes walking distance from the main venue.
       - text: Let us know your preferences and we’ll do the rest.
   - image: /uploads/yoga.jpg
-    small-title: 'yoga &'
-    large-title: MEDITATION
+    title: Yoga and MEDITATION
     para:
       - text: >-
           breakfast followed by mindfulness meditation, the perfect start before
@@ -405,7 +400,7 @@ course-info:
   </section>
   <section class="padding-0" id="sec-8">
     {% for info in page.course-info %}
-    <div class="grid">
+    <div class="grid  {% cycle "invert", "straight" %}">
       {% assign loopindex = forloop.index | modulo: 2 %}
       {% if loopindex == 0 %}
       <div class="col-6_sm-12 bg-info" style="background-image:url('{{info.image}}')">
@@ -417,8 +412,7 @@ course-info:
       <div class="padded-5">
 
         <h3>
-          {{info.small-title}}
-          <span>{{info.large-title}}</span>
+          {{info.title}}
         </h3>
         {% for para in info.para %}
         <p>{{para.text}}</p>
@@ -429,8 +423,7 @@ course-info:
     <div class="col-6_sm-12">
       <div class="padded-5">
         <h3>
-          {{info.small-title}}
-          <span>{{info.large-title}}</span>
+          {{info.title}}
         </h3>
         {% for para in info.para %}
         <p>{{para.text}}</p>
@@ -445,8 +438,6 @@ course-info:
   {% endif %}
 </div>
   {% endfor %}
-<a href="#sec-9" class="arrow"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
-</section>
 <section class="center" id="sec-9">
   <a href="enquire.html" class="main-button">ENQUIRE | BOOK</a>
   <svg class="bottom dark-svg" viewbox="0 0 100 12">

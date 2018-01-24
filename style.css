@@ -304,8 +304,8 @@ input[type="submit"] {
 }
 
 
-@media all and (max-width:520px){
-  #sec-8 .grid:nth-child(2n){
+@media all and (max-width:768px){
+  .invert{
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
