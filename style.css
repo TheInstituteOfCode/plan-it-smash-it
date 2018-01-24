@@ -55,7 +55,7 @@ section,header,footer{
 }
 
 .dark-overlay{
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   min-height: 100vh;
 }
 
@@ -198,7 +198,7 @@ svg.bottom{
 
 header{
   min-height: 100vh;
-  background-image:url('/uploads/terry-pool.jpg');
+  background-image:url('/uploads/shadows.jpg');
   overflow: hidden;
   color: white;
 }
@@ -283,6 +283,10 @@ footer{
   color: black;
 }
 
+.form-bg [class*=col-]{
+  padding: 0;
+}
+
 .form-bg input,
 .form-bg textarea,
 .form-bg select{
@@ -291,6 +295,7 @@ footer{
   padding: 2%;
   background-color: rgba(255, 255, 255, 0.7);
 }
+
 
 select{
   margin-top: 5%;
@@ -303,7 +308,6 @@ textarea{
 }
 
 input[type="submit"] {
-    height: 50px;
     width: 71px;
     letter-spacing: 2px;
     margin: auto;
