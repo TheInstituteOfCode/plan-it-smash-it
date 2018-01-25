@@ -50,6 +50,10 @@ section,header,footer{
   padding-bottom: 0;
 }
 
+.margin-5{
+  margin:5%;
+}
+
 .margin-bottom-5{
   margin-bottom: 5%;
 }
@@ -199,7 +203,6 @@ svg.bottom{
 header{
   min-height: 100vh;
   background-image:url('/uploads/shadows.jpg');
-  overflow: hidden;
   color: white;
 }
 
