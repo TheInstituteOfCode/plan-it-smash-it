@@ -316,7 +316,7 @@ textarea{
 }
 
 input[type="submit"] {
-    width: 71px;
+    width: 300px;
     letter-spacing: 2px;
     margin: auto;
     display: block;
