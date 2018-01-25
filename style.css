@@ -347,6 +347,14 @@ input[type="submit"] {
           flex-direction: column-reverse;
   }
 
+  .main-button,.alt-button{
+    display: block;
+  }
+
+  .fa-check{
+    display: none;
+  }
+
 .overflow-fix{
   width: calc(68vw - 48px);
 }
