@@ -32,11 +32,11 @@ details:
       outside of those days listed in the retreat schedule, alcoholic beverages,
       local excursion costs.
   - text: >-
-      <span>Personal Travel Advisor - Flights:<span>   Plan it, Smash It
+      <span>Personal Travel Advisor - Flights:</span>   Plan it, Smash It
       Business Retreat has partnered with Sekha Walsh, personal travel advisor
       to Barefoot Investor network and all-time amazing flight
       finder.<br/>Booking with Sekha won’t cost you extra and it will be done in
-      20 seconds flat https://www.itravelwithsekha.com, that’s how we roll, we
+      20 seconds flat <a href="https://www.itravelwithsekha.com">www.itravelwithsekha.com</a>, that’s how we roll, we
       get things done.
 mentors:
   - image_path: /uploads/bec.jpg
@@ -306,7 +306,10 @@ course-info:
           <span class="margin-5">
             <i class="fa fa-check" aria-hidden="true"></i>
           </span>
-          <p>{{things.text}}</p>
+          <div class="">
+            <p class="overflow-fix">{{things.text}}</p>
+          </div>
+
         </div>
         {% endfor %}
       </div>
@@ -316,7 +319,9 @@ course-info:
           <span class="padded-5">
             <i class="fa fa-check" aria-hidden="true"></i>
           </span>
-          <p>{{things.text}}</p>
+          <div>
+            <p class="overflow-fix">{{things.text}}</p>
+          </div>
         </div>
         {% endfor %}
       </div>

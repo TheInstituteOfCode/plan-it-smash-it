@@ -247,6 +247,14 @@ header .dark-overlay{
   margin-top: 20%;
 }
 
+#sec-3{
+
+}
+
+.overflow-fix{
+  width: calc(35vw - 48px);
+}
+
 #sec-6{
   padding-bottom: 0;
 }
@@ -339,6 +347,9 @@ input[type="submit"] {
           flex-direction: column-reverse;
   }
 
+.overflow-fix{
+  width: calc(68vw - 48px);
+}
 
 }
 
