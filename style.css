@@ -113,6 +113,10 @@ section,header,footer{
 .bg-info {
   min-height: 30vh;
 }
+
+.fuzzybreak{
+  word-break: break-all;
+}
 /* type */
 
 body{
@@ -290,6 +294,18 @@ footer{
   padding: 0 5% 5%;
 }
 
+footer .col-5{
+  border: 2px solid white;
+  margin-bottom: 10%;
+  padding: 2%;
+}
+
+footer .fa{
+  font-size: 3rem;
+  margin-right: 1vw;
+}
+
+
 /* form */
 
 .form-bg{
@@ -375,6 +391,13 @@ input[type="submit"] {
   svg{
   display: none;
   }
+  .invert{
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  }
+
   #sec-9{
     padding-bottom: 2vw;
   }
