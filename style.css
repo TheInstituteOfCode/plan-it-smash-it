@@ -102,9 +102,12 @@ ul > *,ol > *{
 
 .main-button p {
     line-height:1;
-    padding:0;
+    padding-top: 20px;
     margin:0;
+    letter-spacing:0;
 }
+
+
 .alt-button {
     color: #fff;
     background-color: #117e8d;
