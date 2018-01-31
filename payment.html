@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="padding-0 form-bg">
-    <div class="dark-overlay">
+  <section class="padding-0 form-bg">
+    <div class="">
       <form method="POST" action="http://formspree.io/plansmashretreat@gmail.com">
         <h1>Booking form</h1>
         <div class="grid-spaceBetween">
@@ -62,12 +62,15 @@
           <option value="cant do feb but interested">Bummer! I’d love to come but Feb 2018 doesn’t work for me. Please add me to your mailing list for future retreats.</option>
         </select>
       </div> -->
-      <div class="col-5_sm-12">
+      <div class="col-12">
         <h3>Whats your room preferences</h3>
-        <input type="radio" id="private" name="room-type" required value="private">
-          <label  class="main-button" id="share-button" for="share">Share Room</label>
+        <div class="flex-space">
+
+          <label class="main-button" id="share-button" for="share">Share Room</label>
+          <input type="radio" id="private" name="room-type" required value="private">
           <label id="private-button" for="private"  class="main-button">Private Room</label>
-        <input type="radio" id="share" name="room-type" value="private">
+          <input type="radio" id="share" name="room-type" value="private">
+        </div>
       </div>
     </div>
     <textarea name="challanges" rows="6" placeholder="What are your Top 3 business challenges at the moment?"></textarea>
@@ -75,37 +78,8 @@
     <div class="col-12">
       <input type="checkbox" required name="terms" id="terms" value="agreed to the terms"><label for="terms">i have read and accepted the <a target="_blank" download href="Plan_and_Smash_Retreat_Terms_and_Conditions.pdf">terms and conditions.</a></label>
     </div>
-<!-- 
-
-    <label for="submit" type="submit" class="hidden" id="bill-button">
-      <span id="share-bill">
-        <script
-        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-        data-key="pk_test_ReS3JqCKPd9NHOHwwEfLwffL"
-        data-amount="600000"
-        data-name="rebeccatait.com.au"
-        data-description="Widget"
-        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-        data-locale="auto"
-        data-zip-code="true"
-        data-currency="aud">
-      </script>
-    </span>
-    <span id="private-bill">
-      <script
-      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-      data-key="pk_test_ReS3JqCKPd9NHOHwwEfLwffL"
-      data-amount="820000"
-      data-name="rebeccatait.com.au"
-      data-description="Widget"
-      data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-      data-locale="auto"
-      data-zip-code="true"
-      data-currency="aud">
-    </script>
-  </span>
-</label> -->
-  <input type="submit" class="hidden">
+    <input type="hidden" name="_next" value="/thanks" />
+  <input type="submit">
 </form>
 </div>
 </header>

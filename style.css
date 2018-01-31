@@ -93,6 +93,8 @@ ul > *,ol > *{
   border-radius: 5px;
   display: inline-block;
   margin: 3%;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 .alt-button {
     color: #fff;
@@ -124,6 +126,14 @@ ul > *,ol > *{
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.flex-space{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .two-colum{
@@ -222,6 +232,8 @@ svg.bottom{
   background-color: #41414D;
   color:#fff;
 }
+
+
 
 
 
@@ -332,6 +344,7 @@ footer .fa{
 
 .form-bg{
   background-attachment: fixed;
+  padding: 5%;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -357,7 +370,8 @@ footer .fa{
   width: 100%;
   margin-bottom: 5vh;
   padding: 2%;
-  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid #00A9BF;
+  border-radius: 2px;
 }
 
 input[type=radio]{
@@ -376,7 +390,9 @@ select{
 textarea{
   min-height: 10vh;
   width:auto;
-
+}
+label a{
+  text-decoration: underline;
 }
 
 #bill-button{
@@ -406,7 +422,10 @@ input[type="submit"] {
 
 .active-bill-button {
     text-decoration: underline;
+    background-color: #FCC239;
 }
+
+
 
 .hidden-button{
   display: none;
@@ -430,9 +449,7 @@ input[type="submit"] {
           flex-direction: column-reverse;
   }
 
-  .main-button,.alt-button{
-    display: block;
-  }
+
 
   .fa-check{
     display: none;
