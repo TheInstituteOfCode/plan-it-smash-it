@@ -64,6 +64,10 @@ ul > *,ol > *{
   padding:10%;
 }
 
+.padded-bottom-5{
+  padding-bottom: 5%;
+}
+
 .padded-bottom-0{
   padding-bottom: 0;
 }
@@ -81,7 +85,7 @@ ul > *,ol > *{
   min-height: 100vh;
 }
 
-.main-button{
+.main-button,.alt-button {
   color:#fff;
   background-color: #e67e22;
   padding: 2%;
@@ -93,10 +97,6 @@ ul > *,ol > *{
 .alt-button {
     color: #fff;
     background-color: #117e8d;
-    padding: 2.5%;
-    border-radius: 5px;
-    display: inline-block;
-    margin: 3%;
 }
 
 .arrow{
@@ -360,6 +360,10 @@ footer .fa{
   background-color: rgba(255, 255, 255, 0.7);
 }
 
+input[type=radio]{
+  display: none;
+}
+
 .terms{
   padding: 0;
 }
@@ -375,11 +379,41 @@ textarea{
 
 }
 
+#bill-button{
+  text-align: center;
+    background-color: rgba(0,0,0,0);
+    padding: 5%;
+    border: 0px solid green;
+    width: 100%;
+    display: block;
+}
+
 input[type="submit"] {
     width: 300px;
     letter-spacing: 2px;
     margin: auto;
     display: block;
+}
+
+#terms{
+  width: auto;
+  margin: 1% 0 0;
+}
+
+.hidden{
+  display: none;
+}
+
+.active-bill-button {
+    text-decoration: underline;
+}
+
+.hidden-button{
+  display: none;
+}
+
+.hidden-bill{
+  display: none;
 }
 
 

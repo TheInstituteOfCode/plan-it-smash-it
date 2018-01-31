@@ -12,57 +12,77 @@
   <header class="padding-0 form-bg">
     <div class="dark-overlay">
       <form method="POST" action="http://formspree.io/plansmashretreat@gmail.com">
-        <h1>Enquiry form</h1>
+        <h1>Booking form</h1>
         <div class="grid-spaceBetween">
-          <div class="col-5_sm-12">
-            <input type="text" placeholder="First Name" name="first name">
+          <div class="col-5 margin-bottom-5">
+            <h2>
+              Course Details
+            </h2>
+            <p><span class=para-heading>date:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+
+            <p><span class=para-heading>location:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+            <p><span class=para-heading>etc:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+
+          </div>
+          <div class="col-5 margin-bottom-5">
+            <h2>
+              Whats Included
+            </h2>
+            <p><span class=para-heading>date:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+
+            <p><span class=para-heading>location:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+            <p><span class=para-heading>etc:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+
           </div>
           <div class="col-5_sm-12">
-            <input type="text" placeholder="Last Name" name="last name">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first name" required>
           </div>
           <div class="col-5_sm-12">
-            <input  type="email" placeholder="Your Email" name="Email">
+            <label for="last-name">Last Name</label>
+            <input type="text" required id="last-name" name="last name">
           </div>
           <div class="col-5_sm-12">
-            <input  type="tel" placeholder="Your Phone Number +(country Code)" name="phone number">
+            <label for="email">Your Email address</label>
+            <input id="email" required type="email"  name="Email">
+          </div>
+          <div class="col-5_sm-12">
+            <label for="tel">Your Phone Number +(country Code)</label>
+            <input required type="tel" id="tel" name="phone number">
           </div>
           <div class="col-12">
-            <input  type="tel" placeholder="Where are you from? City, Country" name="city">
+            <label for="city">Where are you from? City, Country</label>
+            <input type="text" id="city" name="city"  required>
           </div>
-          <div class="col-5_sm-12">
-            <h3>Whats your level of interest</h3>
-            <select name="level of interest">
-              <option value="sign me up">Sign me up! I can’t wait!</option>
-              <option value="wants a call">I’m interested and I have some questions about the details.</option>
-              <option value="cant do feb but interested">Bummer! I’d love to come but Feb 2018 doesn’t work for me. Please add me to your mailing list for future retreats.</option>
-            </select>
-          </div>
-          <div class="col-5_sm-12">
-            <h3>Whats your room preferences</h3>
-            <select name="room">
-              <option value="private">Private Room</option>
-              <option value="share">Shared Room</option>
-            </select>
-          </div>
-        </div>
-        <textarea name="challanges" rows="6" placeholder="What are your Top 3 business challenges at the moment?"></textarea>
-        <textarea name="message" rows="6" placeholder="Any questions or comments?"></textarea>
-        <input type="submit" value="Send">
-          <script
-          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="pk_test_ReS3JqCKPd9NHOHwwEfLwffL"
-          data-amount="999"
-          data-name="rebeccatait.com.au"
-          data-description="Widget"
-          data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-          data-locale="auto"
-          data-zip-code="true"
-          data-currency="aud">
-        </script>
+          <!-- <div class="col-5_sm-12">
+          <h3>Whats your level of interest</h3>
+          <select name="level of interest">
+          <option value="sign me up">Sign me up! I can’t wait!</option>
+          <option value="wants a call">I’m interested and I have some questions about the details.</option>
+          <option value="cant do feb but interested">Bummer! I’d love to come but Feb 2018 doesn’t work for me. Please add me to your mailing list for future retreats.</option>
+        </select>
+      </div> -->
+      <div class="col-5_sm-12">
+        <h3>Whats your room preferences</h3>
+        <input type="radio" id="private" name="room-type" required value="private">
+          <label  class="main-button" id="share-button" for="share">Share Room</label>
+          <label id="private-button" for="private"  class="main-button">Private Room</label>
+        <input type="radio" id="share" name="room-type" value="private">
+      </div>
+    </div>
+    <textarea name="challanges" rows="6" placeholder="What are your Top 3 business challenges at the moment?"></textarea>
+    <textarea name="message" rows="6" placeholder="Any questions or comments?"></textarea>
+    <div class="col-12">
+      <input type="checkbox" required name="terms" id="terms" value="agreed to the terms"><label for="terms">i have read and accepted the <a target="_blank" download href="Plan_and_Smash_Retreat_Terms_and_Conditions.pdf">terms and conditions.</a></label>
+    </div>
+<!-- 
+
+    <label for="submit" type="submit" class="hidden" id="bill-button">
+      <span id="share-bill">
         <script
         src="https://checkout.stripe.com/checkout.js" class="stripe-button"
         data-key="pk_test_ReS3JqCKPd9NHOHwwEfLwffL"
-        data-amount="999"
+        data-amount="600000"
         data-name="rebeccatait.com.au"
         data-description="Widget"
         data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
@@ -70,6 +90,25 @@
         data-zip-code="true"
         data-currency="aud">
       </script>
-      </form>
-    </div>
-  </header>
+    </span>
+    <span id="private-bill">
+      <script
+      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+      data-key="pk_test_ReS3JqCKPd9NHOHwwEfLwffL"
+      data-amount="820000"
+      data-name="rebeccatait.com.au"
+      data-description="Widget"
+      data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+      data-locale="auto"
+      data-zip-code="true"
+      data-currency="aud">
+    </script>
+  </span>
+</label> -->
+  <input type="submit" class="hidden">
+</form>
+</div>
+</header>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>

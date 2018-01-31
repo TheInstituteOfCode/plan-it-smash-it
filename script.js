@@ -1,4 +1,21 @@
 $( document ).ready(function() {
+  $('#share-button').click(function(){
+    $("#share-bill").removeClass("hidden-bill");
+    $("#bill-button").removeClass("hidden");
+    $("#private-bill").addClass("hidden-bill");
+    $("#share-button").addClass("active-bill-button");
+    $("#private-button").removeClass("active-bill-button");
+  });
+
+  $('#private-button') .click(function(){
+    $("#private-bill").removeClass('hidden-bill');
+    $("#bill-button").removeClass("hidden");
+    $("#share-bill").addClass('hidden-bill');
+    $("#private-button").addClass("active-bill-button");
+    $("#share-button").removeClass("active-bill-button");
+  });
+
+
 
   $('a[href*="#"]')
     // Remove links that don't actually link to anything
