@@ -12,6 +12,8 @@
 }
 
 
+
+
 :focus{
   outline: 0;
   border: 0;
@@ -473,7 +475,13 @@ input[type="submit"] {
   width: calc(68vw - 48px);
 }
 
+    
+label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
 }
+
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   h2{
