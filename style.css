@@ -452,6 +452,12 @@ input[type="submit"] {
 }
 
 
+label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
 @media all and (max-width:768px){
   header span{
     display: block;
@@ -474,13 +480,9 @@ input[type="submit"] {
 .overflow-fix{
   width: calc(68vw - 48px);
 }
-
+} /* end media query */
     
-label {
-    font-weight: bold;
-    display: inline-block;
-    margin-bottom: 10px;
-}
+
 
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
