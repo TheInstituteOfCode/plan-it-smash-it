@@ -23,7 +23,7 @@ img{
 
 section,header,footer{
   padding:0 5% 10vw;
-  position: relative;
+  position: relative;main-
 }
 
 .height-50{
@@ -88,8 +88,10 @@ ul > *,ol > *{
 .main-button,.alt-button {
   color:#fff;
   background-color: #e67e22;
-  padding: 2%;
-  font-size: 2rem;
+  padding: 2% 4%;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: bold;
   border-radius: 5px;
   display: inline-block;
   margin: 3%;
