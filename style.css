@@ -84,7 +84,8 @@ ul > *,ol > *{
 .main-button{
   color:#fff;
   background-color: #e67e22;
-  padding: 2.5%;
+  padding: 2%;
+  font-size: 2rem;
   border-radius: 5px;
   display: inline-block;
   margin: 3%;
@@ -251,7 +252,7 @@ header .dark-overlay{
 
 #sec-3{
   min-height: 100vh;
-  background-image:url('/uploads/class.jpg');
+  background-image:url('/uploads/pool-shot.jpg');
 }
 #sec-5{
   padding-top: 10vw;
