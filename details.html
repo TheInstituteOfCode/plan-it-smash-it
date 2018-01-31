@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Plan it, Smash it</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.1/gridlex.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="padding-0 form-bg">
+    <div class="">
+      <form method="POST" action="http://formspree.io/plansmashretreat@gmail.com">
+        <h1>Plan it, Smash it, Biz Retreat</h1>
+        <div class="grid-spaceBetween">
+          <div class="col-5 margin-bottom-5">
+            <h2>
+              Course Details
+            </h2>
+            <p><span class=para-heading>date:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+
+            <p><span class=para-heading>location:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+            <p><span class=para-heading>etc:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+
+          </div>
+          <div class="col-5 margin-bottom-5">
+            <h2>
+              Whats Included
+            </h2>
+            <p><span class=para-heading>date:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+
+            <p><span class=para-heading>location:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+            <p><span class=para-heading>etc:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+
+          </div>
+          <h2 class="col-12">Step 1: Your Details</h2>
+          <div class="col-5_sm-12">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first name" required>
+          </div>
+          <div class="col-5_sm-12">
+            <label for="last-name">Last Name</label>
+            <input type="text" required id="last-name" name="last name">
+          </div>
+          <div class="col-5_sm-12">
+            <label for="email">Your Email address</label>
+            <input id="email" required type="email"  name="Email">
+          </div>
+          <div class="col-5_sm-12">
+            <label for="tel">Your Phone Number +(country Code)</label>
+            <input required type="tel" id="tel" name="phone number">
+          </div>
+          <div class="col-12">
+            <label for="city">Where are you from? City, Country</label>
+            <input type="text" id="city" name="city"  required>
+          </div>
+          <!-- <div class="col-5_sm-12">
+          <h3>Whats your level of interest</h3>
+          <select name="level of interest">
+          <option value="sign me up">Sign me up! I can’t wait!</option>
+          <option value="wants a call">I’m interested and I have some questions about the details.</option>
+          <option value="cant do feb but interested">Bummer! I’d love to come but Feb 2018 doesn’t work for me. Please add me to your mailing list for future retreats.</option>
+        </select>
+      </div> -->
+      <div class="col-12">
+        <h3>Whats your room preferences</h3>
+        <div class="flex-space">
+
+          <label class="main-button" id="share-button" for="share">Share Room</label>
+          <input type="radio" id="private" name="room-type" required value="private">
+          <label id="private-button" for="private"  class="main-button">Private Room</label>
+          <input type="radio" id="share" name="room-type" value="private">
+        </div>
+      </div>
+    </div>
+    <textarea name="challanges" rows="6" placeholder="What are your Top 3 business challenges at the moment?"></textarea>
+    <textarea name="message" rows="6" placeholder="Any questions or comments?"></textarea>
+    <div class="col-12">
+      <input type="checkbox" required name="terms" id="terms" value="agreed to the terms"><label for="terms">i have read and accepted the <a target="_blank" download href="Plan_and_Smash_Retreat_Terms_and_Conditions.pdf">terms and conditions.</a></label>
+    </div>
+    <input type="hidden" name="_next" value="/thanks" />
+  <input type="submit">
+</form>
+</div>
+</header>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
