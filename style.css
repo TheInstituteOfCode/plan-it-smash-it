@@ -100,7 +100,8 @@ ul > *,ol > *{
   transition: 2s;
 }
 
-.main-button p {
+.main-button p, 
+.alt-button p{
     line-height:1.1;
     padding-top: 20px;
     margin:0;
