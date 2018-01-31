@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Plan it, Smash it</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.1/gridlex.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="padding-0 form-bg">
+    <div class="dark-overlay">
+      <form method="POST" action="http://formspree.io/plansmashretreat@gmail.com">
+        <h1>Enquiry form</h1>
+        <div class="grid-spaceBetween">
+          <div class="col-5_sm-12">
+            <input type="text" placeholder="First Name" name="first name">
+          </div>
+          <div class="col-5_sm-12">
+            <input type="text" placeholder="Last Name" name="last name">
+          </div>
+          <div class="col-5_sm-12">
+            <input  type="email" placeholder="Your Email" name="Email">
+          </div>
+          <div class="col-5_sm-12">
+            <input  type="tel" placeholder="Your Phone Number +(country Code)" name="phone number">
+          </div>
+          <div class="col-12">
+            <input  type="tel" placeholder="Where are you from? City, Country" name="city">
+          </div>
+          <div class="col-5_sm-12">
+            <h3>Whats your level of interest</h3>
+            <select name="level of interest">
+              <option value="sign me up">Sign me up! I can’t wait!</option>
+              <option value="wants a call">I’m interested and I have some questions about the details.</option>
+              <option value="cant do feb but interested">Bummer! I’d love to come but Feb 2018 doesn’t work for me. Please add me to your mailing list for future retreats.</option>
+            </select>
+          </div>
+          <div class="col-5_sm-12">
+            <h3>Whats your room preferences</h3>
+            <select name="room">
+              <option value="private">Private Room</option>
+              <option value="share">Shared Room</option>
+            </select>
+          </div>
+        </div>
+        <textarea name="challanges" rows="6" placeholder="What are your Top 3 business challenges at the moment?"></textarea>
+        <textarea name="message" rows="6" placeholder="Any questions or comments?"></textarea>
+        <input type="submit" value="Send">
+        <form action="/your-server-side-code" method="POST">
+          <script
+          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="pk_test_ReS3JqCKPd9NHOHwwEfLwffL"
+          data-amount="999"
+          data-name="rebeccatait.com.au"
+          data-description="Widget"
+          data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+          data-locale="auto"
+          data-zip-code="true"
+          data-currency="aud">
+        </script>
+        <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="pk_test_ReS3JqCKPd9NHOHwwEfLwffL"
+        data-amount="999"
+        data-name="rebeccatait.com.au"
+        data-description="Widget"
+        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+        data-locale="auto"
+        data-zip-code="true"
+        data-currency="aud">
+      </script>
+      </form>
+    </div>
+  </header>

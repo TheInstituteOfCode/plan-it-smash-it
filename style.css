@@ -26,8 +26,26 @@ section,header,footer{
   position: relative;
 }
 
+.height-50{
+  min-height: 50vh;
+}
+
 .center{
   text-align: center;
+}
+
+.left-headers h3{
+  text-align: left;
+  display: inline-block;
+}
+
+ul, ol{
+  list-style-position: outside;
+  font-size: 2rem;
+
+}
+ul > *,ol > *{
+  margin-left: 5%;
 }
 
 .padding-0{
@@ -97,11 +115,14 @@ section,header,footer{
   display: -ms-flexbox;
   display: flex;
   /* -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; */
+  -ms-flex-pack: center;
+  justify-content: center; */
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .two-colum{
@@ -336,6 +357,10 @@ footer .fa{
   margin-bottom: 5vh;
   padding: 2%;
   background-color: rgba(255, 255, 255, 0.7);
+}
+
+.terms{
+  padding: 0;
 }
 
 
