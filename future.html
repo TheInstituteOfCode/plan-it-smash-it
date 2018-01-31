@@ -35,7 +35,7 @@
             <p><span class=para-heading>etc:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
 
           </div> -->
-          <h2 class="col-12">Step 1: Your Details</h2>
+          <h2 class="col-12">Your Details</h2>
           <div class="col-5_sm-12">
             <label for="first-name">First Name</label>
             <input type="text" id="first-name" name="first name" required>
@@ -56,6 +56,10 @@
             <label for="city">Where are you from? City, Country</label>
             <input type="text" id="city" name="city"  required>
           </div>
+          <div class="col-12">
+            <label for="timing">When would be a good time for you?</label>
+            <input type="text" id="timing" name="timing"  required>
+          </div>
           <!-- <div class="col-5_sm-12">
           <h3>Whats your level of interest</h3>
           <select name="level of interest">
@@ -68,20 +72,18 @@
         <h3>Whats your room preferences</h3>
         <div class="flex-space">
 
-          <label class="main-button" id="share-button" for="share">Share Room</label>
+          <label class="main-button" id="share-button" for="share">Share Room ($6000)</label>
           <input type="radio" id="private" name="room-type" required value="private">
-          <label id="private-button" for="private"  class="main-button">Private Room</label>
+          <label id="private-button" for="private"  class="main-button">Private Room ($8200)</label>
           <input type="radio" id="share" name="room-type" value="private">
         </div>
       </div>
     </div>
     <textarea name="challanges" rows="6" placeholder="What are your Top 3 business challenges at the moment?"></textarea>
     <textarea name="message" rows="6" placeholder="Any questions or comments?"></textarea>
-    <div class="col-12">
-      <input type="checkbox" required name="terms" id="terms" value="agreed to the terms"><label for="terms">i have read and accepted the <a target="_blank" download href="Plan_and_Smash_Retreat_Terms_and_Conditions.pdf">terms and conditions.</a></label>
-    </div>
-    <input type="hidden" name="_next" value="/book-thanks" />
-  <input type="submit" value="proceed to the payment gateway ">
+
+    <input type="hidden" name="_next" value="/thanks" />
+  <input type="submit" value="Send Message">
 </form>
 </div>
 </header>
