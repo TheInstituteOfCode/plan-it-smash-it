@@ -65,8 +65,8 @@
         </select>
       </div> -->
       <div class="col-12">
-        <h3>Whats your room preferences</h3>
-        <div class="flex-space">
+        <label>Whats your room preferences</label>
+        <div>
 
           <label class="main-button" id="share-button" for="share">Share Room ($6000)</label>
           <input type="radio" id="private" name="room-type" required value="private">
@@ -75,8 +75,10 @@
         </div>
       </div>
     </div>
-    <textarea name="challanges" rows="6" placeholder="What are your Top 3 business challenges at the moment?"></textarea>
-    <textarea name="message" rows="6" placeholder="Any questions or comments?"></textarea>
+    <label for="challenges"> What are your Top 3 business challenges at the moment?</label>
+    <textarea name="challenges" rows="6"></textarea>
+    <label for="message">Any questions or comments? </label>
+    <textarea name="message" rows="6" ></textarea>
 
     <input type="hidden" name="_next" value="/thanks" />
   <input type="submit" value="Send Message">
