@@ -101,7 +101,7 @@ ul > *,ol > *{
 }
 
 .main-button p {
-    line-height:1;
+    line-height:1.1;
     padding-top: 20px;
     margin:0;
     letter-spacing:0;
