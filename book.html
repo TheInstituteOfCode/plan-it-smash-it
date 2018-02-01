@@ -26,6 +26,58 @@ layout: default
   <p><span class=para-heading>location:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
   <p><span class=para-heading>etc:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
 
+          </div> -->
+          <h2 class="col-12">Step 1: Your Details</h2>
+          <div class="col-5_sm-12">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first name" required>
+          </div>
+          <div class="col-5_sm-12">
+            <label for="last-name">Last Name</label>
+            <input type="text" required id="last-name" name="last name">
+          </div>
+          <div class="col-5_sm-12">
+            <label for="email">Your Email address</label>
+            <input id="email" required type="email"  name="Email">
+          </div>
+          <div class="col-5_sm-12">
+            <label for="tel">Your Phone Number +(country Code)</label>
+            <input required type="tel" id="tel" name="phone number">
+          </div>
+          <div class="col-12">
+            <label for="city">Where are you from? City, Country</label>
+            <input type="text" id="city" name="city"  required>
+          </div>
+          <!-- <div class="col-5_sm-12">
+          <h3>Whats your level of interest</h3>
+          <select name="level of interest">
+          <option value="sign me up">Sign me up! I can’t wait!</option>
+          <option value="wants a call">I’m interested and I have some questions about the details.</option>
+          <option value="cant do feb but interested">Bummer! I’d love to come but Feb 2018 doesn’t work for me. Please add me to your mailing list for future retreats.</option>
+        </select>
+      </div> -->
+      <div class="col-12">
+        <label>What is your room preferences</label>
+        <div>
+
+          <label class="alt-button" id="share-button" for="share">Shared Room ($6000)</label>
+          <input type="radio" id="share" name="room-type" value="shared" checked="checked">
+
+          <label id="private-button" for="private"  class="alt-button">Private Room ($8200)</label>
+          <input type="radio" id="private" name="room-type" required value="private">
+        </div>
+      </div>
+    </div>
+    <label for="challenges"> What are your top 3 business challenges at the moment?</label>
+    <textarea name="challenges" rows="6"></textarea>
+    <label for="message">Any questions or comments? </label>
+    <textarea name="message" rows="6" ></textarea>
+
+    <div class="col-12">
+      <input type="checkbox" required name="terms" id="terms" value="agreed to the terms"><label for="terms">I have read and accepted the <a target="_blank" download href="Plan_and_Smash_Retreat_Terms_and_Conditions.pdf">terms and conditions.</a></label>
+    </div>
+    <input type="hidden" name="_next" value="/book-thanks" />
+  <input type="submit" class="main-button" value="Proceed to Payment">
 </div> -->
 <h2 class="col-12">Step 1: Your Details</h2>
 <div class="col-5_sm-12">
